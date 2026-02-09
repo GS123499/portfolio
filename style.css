@@ -481,6 +481,52 @@ span.highlight {
     color: var(--accent-color);
 }
 
+/* Contact Form */
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px; /* Comfortable padding */
+    background-color: rgba(10, 25, 47, 0.4); /* Slightly lighter/darker than bg to contrast */
+    border: 1px solid var(--card-hover);
+    border-radius: 4px;
+    color: var(--text-primary);
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    background-color: rgba(10, 25, 47, 0.7);
+}
+
+.contact-form button {
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
 /* Footer */
 .footer {
     color: var(--text-secondary);
